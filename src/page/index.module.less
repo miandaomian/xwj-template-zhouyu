@@ -1,0 +1,41 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  .listBox{
+    width:400px;
+    height: 700px;
+    max-height: 100vh;
+    overflow: auto;
+    background-color: #aaa;
+    box-sizing: border-box;
+    padding:  20px;
+    .itemBox{
+      height: 100px;
+      margin-bottom: 15px;
+      background-color: #fff;
+      border:1px solid #000;
+      box-sizing: border-box;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .textItem{
+        flex: 1;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .createDate{
+          color: #999;
+        }
+      }
+      button{
+        width: 80px;
+        height: 40px;
+        color: #fff;
+        border-color: #000;
+        background-color: #000;
+      }
+    }
+  }
+}
